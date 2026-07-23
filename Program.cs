@@ -1,5 +1,3 @@
-
-
 using Microsoft.AspNetCore.Authentication;
 
 
@@ -74,7 +72,10 @@ builder.Services.AddAuthorization();
 // --- End services ---
 builder.Services.AddSingleton<EnrollmentWorker>();
 builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
-
+builder.Services.AddOptions<PaymentOptions>()
+    .BindConfiguration("Payments")
+    .ValidateDataAnnotations()
+    .ValidateOnStart();
 builder.Host.UseDefaultServiceProvider(options =>
 {
     options.ValidateScopes = true;
