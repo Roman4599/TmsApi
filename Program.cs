@@ -1,5 +1,10 @@
 
+
 using Microsoft.AspNetCore.Authentication;
+
+
+
+
 /*var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();
@@ -57,14 +62,24 @@ app.MapGet("/api/assessments/results", () =>
 
 app.Run();
 */
+
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 // --- Add required services ---
 builder.Services.AddAuthentication("Training")
     .AddScheme<AuthenticationSchemeOptions, TrainingAuthHandler>("Training", null);
 builder.Services.AddAuthorization();
 // --- End services ---
+builder.Services.AddSingleton<EnrollmentWorker>();
+builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
 
-
+builder.Host.UseDefaultServiceProvider(options =>
+{
+    options.ValidateScopes = true;
+    options.ValidateOnBuild = true;
+});
 var app = builder.Build();
 
 app.UseMiddleware<RequestLoggingMiddleware>();
@@ -88,4 +103,12 @@ app.MapGet("/api/assessments/results", () =>
         letterGrade = "A"
     });
 }).RequireAuthorization();
+
+
+
+app.MapGet("/test-worker", (EnrollmentWorker worker) =>
+{
+    return "worker created";
+});
+
 app.Run();
