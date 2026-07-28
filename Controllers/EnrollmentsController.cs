@@ -19,6 +19,7 @@ public class EnrollmentsController : ControllerBase
 {
     private readonly IEnrollmentService _enrollmentService;
 
+
     public EnrollmentsController(IEnrollmentService enrollmentService)
     {
         _enrollmentService = enrollmentService;
@@ -58,3 +59,5 @@ public class EnrollmentsController : ControllerBase
 }
 
 public record CreateEnrollmentRequest(string StudentId, string CourseCode);
+
+
