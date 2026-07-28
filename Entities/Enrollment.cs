@@ -22,5 +22,7 @@ public class Enrollment
 
     // Navigation property to Course
     public Course Course { get; set; } = null!;
+    // New column for Exercise 6
+    public bool IsArchived { get; set; }= false;
 }
 
