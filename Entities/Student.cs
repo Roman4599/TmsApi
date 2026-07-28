@@ -14,6 +14,7 @@ public class Student
 
     public ICollection<Enrollment> Enrollments { get; set; }= new List<Enrollment>();
     public ICollection<Certificate> Certificates { get; set; } = [];
-
+    public uint Version { get; set; } // Concurrency token
+    public bool IsDeleted { get; set; } = false;
 }
 

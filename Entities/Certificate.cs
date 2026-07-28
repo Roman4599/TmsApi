@@ -22,4 +22,6 @@ public class Certificate
 
     // Navigation property
     public Course Course { get; set; } = null!;
+    
+
 }

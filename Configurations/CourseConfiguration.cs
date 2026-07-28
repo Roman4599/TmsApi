@@ -15,6 +15,8 @@ namespace TmsApi.Configurations
             builder.Property(c => c.Title)
                    .IsRequired()            // Real-world: A course must have a title (e.g., "Math 101")
                    .HasMaxLength(200);      // Real-world: Limit title length so it doesn't break UI layouts
+            builder.HasQueryFilter(c => !c.IsDeleted);
+        
         }
     }
 }

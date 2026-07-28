@@ -24,5 +24,6 @@ public class Enrollment
     public Course Course { get; set; } = null!;
     // New column for Exercise 6
     public bool IsArchived { get; set; }= false;
+    public bool IsDeleted { get; set; } = false;
 }
 

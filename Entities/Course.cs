@@ -14,7 +14,7 @@ public class Course
 
     // Navigation property (One Course -> Many Enrollments)
     public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
-    
+    public bool IsDeleted { get; set; } = false;
 
 
 }

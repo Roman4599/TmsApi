@@ -28,6 +28,8 @@ namespace TmsApi.Configurations
             builder.Property(e => e.Grade)
                    .IsRequired()
                    .HasMaxLength(2);
+            builder.HasQueryFilter(c => !c.IsDeleted);
+       
         }
     }
 }
