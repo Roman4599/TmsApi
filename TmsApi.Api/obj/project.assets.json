@@ -15,7 +15,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.OpenApi/10.0.10": {
+      "Microsoft.AspNetCore.OpenApi/10.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "2.0.0"
@@ -442,18 +442,6 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/10.0.10": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "10.0.10"
-        },
-        "compile": {
-          "lib/net10.0/_._": {}
-        },
-        "runtime": {
-          "lib/net10.0/_._": {}
-        }
-      },
       "Microsoft.Extensions.DependencyModel/10.0.10": {
         "type": "package",
         "compile": {
@@ -555,15 +543,15 @@
           }
         }
       },
-      "Scalar.AspNetCore/2.16.16": {
+      "Scalar.AspNetCore/2.0.0": {
         "type": "package",
         "compile": {
-          "lib/net10.0/Scalar.AspNetCore.dll": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net10.0/Scalar.AspNetCore.dll": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
             "related": ".xml"
           }
         },
@@ -719,6 +707,23 @@
         "runtime": {
           "bin/placeholder/TmsApi.Domain.dll": {}
         }
+      },
+      "TmsApi.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.10",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.3",
+          "TmsApi.Application": "1.0.0",
+          "TmsApi.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TmsApi.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TmsApi.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -741,10 +746,10 @@
         "logo.png"
       ]
     },
-    "Microsoft.AspNetCore.OpenApi/10.0.10": {
-      "sha512": "d4Atx9IHq7JgX0F/h7Db+m9zAUzC+cKdI9k+OWnnyQIOUQtfvjIEuhvbjPigVMkAmPUgCbJ8Yp6M9ghUqHtJSQ==",
+    "Microsoft.AspNetCore.OpenApi/10.0.0": {
+      "sha512": "0aqIF1t+sA2T62LIeMtXGSiaV7keGQaJnvwwmu+htQdjCaKYARfXAeqp4nHH9y2etpilyZ/tnQzZg4Ilmo/c4Q==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/10.0.10",
+      "path": "microsoft.aspnetcore.openapi/10.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -755,7 +760,7 @@
         "build/Microsoft.AspNetCore.OpenApi.targets",
         "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll",
         "lib/net10.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
@@ -1916,34 +1921,6 @@
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/10.0.10": {
-      "sha512": "oFNTteHcfnftdV9a+4Psed+HV95YKnNrPF8F2+nHtvdOVDfdcbNqKE7xYutOquo1cuBAs84Lq5Boh49ANnF4zQ==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/10.0.10",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "docs/PACKAGE.md",
-        "lib/net10.0/_._",
-        "lib/net8.0/_._",
-        "lib/net9.0/_._",
-        "microsoft.entityframeworkcore.tools.10.0.10.nupkg.sha512",
-        "microsoft.entityframeworkcore.tools.nuspec",
-        "tools/EntityFrameworkCore.PS2.psd1",
-        "tools/EntityFrameworkCore.PS2.psm1",
-        "tools/EntityFrameworkCore.psd1",
-        "tools/EntityFrameworkCore.psm1",
-        "tools/about_EntityFrameworkCore.help.txt",
-        "tools/init.ps1",
-        "tools/net472/any/ef.exe",
-        "tools/net472/win-arm64/ef.exe",
-        "tools/net472/win-x86/ef.exe",
-        "tools/net8.0/any/ef.dll",
-        "tools/net8.0/any/ef.runtimeconfig.json"
-      ]
-    },
     "Microsoft.Extensions.DependencyModel/10.0.10": {
       "sha512": "rfZA1RjR021RPqSmIPovfz2aOd79TGqJ9BengbjnzIISOVwjLmuSDnhCMmiY/1c6iYvGolQ1iNGzkav0u11XEA==",
       "type": "package",
@@ -2090,22 +2067,20 @@
         "postgresql.png"
       ]
     },
-    "Scalar.AspNetCore/2.16.16": {
-      "sha512": "Ax0e0bIh+Upf92k1+pTBUom3e/kbpu20qsrDYmmS1NM721Eq2xF8c789x6IbiNrvW8WwySRzPv/icYYhb6idSg==",
+    "Scalar.AspNetCore/2.0.0": {
+      "sha512": "7o7frlvcpz2qKQGJHP1aS/9vOvEguhEB4mJU3O8VqBuDOu5VGncgfxkhnsOIA0jOKTTe2Apy8zu24L8ShM8j9A==",
       "type": "package",
-      "path": "scalar.aspnetcore/2.16.16",
+      "path": "scalar.aspnetcore/2.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "icon.png",
-        "lib/net10.0/Scalar.AspNetCore.dll",
-        "lib/net10.0/Scalar.AspNetCore.xml",
         "lib/net8.0/Scalar.AspNetCore.dll",
         "lib/net8.0/Scalar.AspNetCore.xml",
         "lib/net9.0/Scalar.AspNetCore.dll",
         "lib/net9.0/Scalar.AspNetCore.xml",
-        "scalar.aspnetcore.2.16.16.nupkg.sha512",
+        "scalar.aspnetcore.2.0.0.nupkg.sha512",
         "scalar.aspnetcore.nuspec"
       ]
     },
@@ -2304,17 +2279,21 @@
       "type": "project",
       "path": "../TmsApi.Domain/TmsApi.Domain.csproj",
       "msbuildProject": "../TmsApi.Domain/TmsApi.Domain.csproj"
+    },
+    "TmsApi.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../TmsApi.Infrastructure/TmsApi.Infrastructure.csproj",
+      "msbuildProject": "../TmsApi.Infrastructure/TmsApi.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Microsoft.AspNetCore.OpenApi >= 10.0.10",
+      "Microsoft.AspNetCore.OpenApi >= 10.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.10",
-      "Microsoft.EntityFrameworkCore.Tools >= 10.0.10",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 10.0.3",
-      "Scalar.AspNetCore >= 2.16.16",
+      "Scalar.AspNetCore >= 2.0.0",
       "TmsApi.Application >= 1.0.0",
-      "TmsApi.Domain >= 1.0.0"
+      "TmsApi.Domain >= 1.0.0",
+      "TmsApi.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2346,16 +2325,16 @@
             "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Application\\TmsApi.Application.csproj": {
               "projectPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Application\\TmsApi.Application.csproj"
             },
-            "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Domain\\TmsApi.Domain.csproj": {
-              "projectPath": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Domain\\TmsApi.Domain.csproj"
+            "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Domain\\TmsApi.Domain.csproj": {
+              "projectPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Domain\\TmsApi.Domain.csproj"
+            },
+            "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj"
             }
           }
         }
       },
       "warningProperties": {
-        "noWarn": [
-          "NU1903"
-        ],
         "warnAsError": [
           "NU1605"
         ]
@@ -2374,7 +2353,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[10.0.10, )"
+            "version": "[10.0.0, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -2382,19 +2361,9 @@
             "target": "Package",
             "version": "[10.0.10, )"
           },
-          "Microsoft.EntityFrameworkCore.Tools": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[10.0.10, )"
-          },
-          "Npgsql.EntityFrameworkCore.PostgreSQL": {
-            "target": "Package",
-            "version": "[10.0.3, )"
-          },
           "Scalar.AspNetCore": {
             "target": "Package",
-            "version": "[2.16.16, )"
+            "version": "[2.0.0, )"
           }
         },
         "imports": [
@@ -2833,5 +2802,17 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "libraryId": "Microsoft.OpenApi",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }
