@@ -1,3 +1,4 @@
+namespace TmsApi.Domain.Entities;
 public class Course
 {
     // Surrogate primary key

@@ -22,4 +22,9 @@
     <PackageReference Include="Scalar.AspNetCore" Version="2.16.16" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TmsApi.Application\TmsApi.Application.csproj" />
+    <ProjectReference Include="..\TmsApi.Domain\TmsApi.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
