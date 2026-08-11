@@ -2982,11 +2982,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj",
+      "projectUniqueName": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj",
       "projectName": "TmsApi.Infrastructure",
-      "projectPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj",
+      "projectPath": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\obj\\",
+      "outputPath": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3005,8 +3005,8 @@
             "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Application\\TmsApi.Application.csproj": {
               "projectPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Application\\TmsApi.Application.csproj"
             },
-            "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Domain\\TmsApi.Domain.csproj": {
-              "projectPath": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Domain\\TmsApi.Domain.csproj"
+            "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Domain\\TmsApi.Domain.csproj": {
+              "projectPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Domain\\TmsApi.Domain.csproj"
             }
           }
         }

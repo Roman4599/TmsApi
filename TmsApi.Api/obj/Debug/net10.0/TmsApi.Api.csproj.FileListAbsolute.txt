@@ -140,3 +140,4 @@ C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\Microsoft.Ident
 C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\Microsoft.Extensions.Caching.Hybrid.dll

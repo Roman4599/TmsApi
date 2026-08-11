@@ -481,8 +481,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Domain\\TmsApi.Domain.csproj": {
-              "projectPath": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Domain\\TmsApi.Domain.csproj"
+            "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Domain\\TmsApi.Domain.csproj": {
+              "projectPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Domain\\TmsApi.Domain.csproj"
             }
           }
         }
