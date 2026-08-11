@@ -128,3 +128,15 @@ C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\obj\Debug\net10.0\refint\TmsApi.A
 C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\obj\Debug\net10.0\TmsApi.Api.pdb
 C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\obj\Debug\net10.0\TmsApi.Api.genruntimeconfig.cache
 C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\obj\Debug\net10.0\ref\TmsApi.Api.dll
+C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\Asp.Versioning.Abstractions.dll
+C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\Asp.Versioning.Http.dll
+C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\Asp.Versioning.Mvc.dll
+C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\Asp.Versioning.Mvc.ApiExplorer.dll
+C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\FluentValidation.dll
+C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\MediatR.dll
+C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\MediatR.Contracts.dll
+C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin\QiyasPractice\TmsApi\TmsApi.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
