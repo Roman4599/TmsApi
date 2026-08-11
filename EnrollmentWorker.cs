@@ -1,40 +1,26 @@
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using TmsApi.Services;   // ← ADDED
 
-
-/*public class EnrollmentWorker
-{
-    //EnrollmentWorker keeps a reference to IEnrollmentService
-        private readonly IEnrollmentService _enrollmentService;
-
-    public EnrollmentWorker(IEnrollmentService enrollmentService)
-    {
-        _enrollmentService = enrollmentService;
-    }
-
-    public void ProcessBatch()
-    {
-        _enrollmentService.GetAllAsync();
-    }
-}
-*/
-// lab 4Exercise 2 Step B: Fix captive dependency with IServiceScopeFactory
+namespace TmsApi.Workers;   // adjust namespace if needed
 
 public class EnrollmentWorker
 {
     private readonly IServiceScopeFactory _scopeFactory;
+    private readonly ILogger<EnrollmentWorker> _logger;
 
-    public EnrollmentWorker(IServiceScopeFactory scopeFactory)
+    public EnrollmentWorker(IServiceScopeFactory scopeFactory, ILogger<EnrollmentWorker> logger)
     {
         _scopeFactory = scopeFactory;
+        _logger = logger;
     }
 
-    public async Task ProcessBatch()
+    public async Task ProcessBatchAsync(CancellationToken ct)
     {
-   
-    using var scope = _scopeFactory.CreateScope();
-
-    var svc = scope.ServiceProvider.GetRequiredService<IEnrollmentService>();
-    await svc.GetAllAsync();
+        using var scope = _scopeFactory.CreateScope();
+        var enrollmentService = scope.ServiceProvider.GetRequiredService<IEnrollmentService>();
+        // Your logic here...
+        _logger.LogInformation("Processing enrollment batch...");
+        await Task.CompletedTask;
     }
 }
-
- 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5oiAi+/6oDc=",
+  "dgSpecHash": "uzLM4+BJ2dQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.csproj",
   "expectedPackageFiles": [
@@ -35,18 +35,5 @@
     "C:\\Users\\Admin\\.nuget\\packages\\system.composition.runtime\\9.0.0\\system.composition.runtime.9.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.composition.typedparts\\9.0.0\\system.composition.typedparts.9.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
-      "projectPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.csproj",
-      "libraryId": "Microsoft.OpenApi",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }

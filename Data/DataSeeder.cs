@@ -19,30 +19,41 @@ public static class DataSeeder
         ("CSE-304", "Full-Stack Integration", 22),
         ("CSE-305", "Testing and Quality Assurance", 22),
         ("CSE-306", "Security and Authentication", 20),
-        ("DAT-101", "Database Design Foundations", 30),
-        ("DAT-201", "Advanced SQL and Indexing", 26),
-        ("DAT-202", "Data Modelling for the Web", 26),
-        ("ARC-101", "Software Architecture Patterns", 22),
-        ("ARC-201", "Cloud-Native Architecture", 22),
-        ("DEV-101", "DevOps Foundations", 24),
-        ("DEV-201", "Continuous Delivery Pipelines", 22),
-        ("MOB-101", "Mobile App Foundations", 24),
-        ("MOB-201", "Cross-Platform Mobile", 22),
-        ("AI-101", "Applied Machine Learning", 20),
-        ("AI-201", "Generative AI for Developers", 18),
-        ("UX-101", "UX Research and Wireframing", 24),
-        ("UX-201", "Design Systems and Tokens", 22),
+        ("CSE-307", "DevOps and Deployment", 20),
+        ("CSE-308", "Database Design and Optimization", 24),
+        ("CSE-309", "Microservices Architecture", 18),
+        ("CSE-310", "Cloud Computing", 20),
+        ("CSE-311", "Mobile Application Development", 24),
+        ("CSE-312", "UI/UX Design Principles", 26),
+        ("CSE-313", "Software Project Management", 22),
+        ("CSE-314", "Requirements Engineering", 22),
+        ("CSE-315", "Software Testing and QA", 24),
+        ("CSE-316", "Cybersecurity Fundamentals", 20),
+        ("CSE-317", "Artificial Intelligence", 18),
+        ("CSE-318", "Data Science", 20),
+        ("CSE-319", "Machine Learning", 18)
     ];
 
     public static async Task SeedAsync(TmsDbContext context, CancellationToken ct = default)
     {
         await context.Database.MigrateAsync(ct);
-        if (await context.Courses.AnyAsync(ct)) return;
+
+        if (await context.Courses.AnyAsync(ct))
+            return;
 
         foreach (var (code, title, maxCapacity) in Courses)
         {
-            context.Courses.Add(new Course { Code = code, Title = title, MaxCapacity = maxCapacity });
+            context.Courses.Add(new Course
+            {
+                Code = code,
+                Title = title,
+                MaxCapacity = maxCapacity,
+                EnrollmentCount = 0,
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = null
+            });
         }
+
         await context.SaveChangesAsync(ct);
     }
 }
