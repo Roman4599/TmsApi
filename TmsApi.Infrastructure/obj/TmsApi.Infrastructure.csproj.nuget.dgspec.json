@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj": {}
+    "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj": {}
   },
   "projects": {
     "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Application\\TmsApi.Application.csproj": {
@@ -692,14 +692,14 @@
         }
       }
     },
-    "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj": {
+    "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj",
         "projectName": "TmsApi.Infrastructure",
-        "projectPath": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -755,9 +755,21 @@
               "target": "Package",
               "version": "[10.0.10, )"
             },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[10.0.11, )"
+            },
+            "Microsoft.Extensions.Http.Resilience": {
+              "target": "Package",
+              "version": "[10.8.0, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[10.0.3, )"
+            },
+            "Polly.Extensions": {
+              "target": "Package",
+              "version": "[8.7.0, )"
             }
           },
           "imports": [

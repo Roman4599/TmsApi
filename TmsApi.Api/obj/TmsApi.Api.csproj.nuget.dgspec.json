@@ -33,8 +33,8 @@
               "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Domain\\TmsApi.Domain.csproj": {
                 "projectPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Domain\\TmsApi.Domain.csproj"
               },
-              "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj": {
-                "projectPath": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj"
+              "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj"
               }
             }
           }
@@ -64,9 +64,21 @@
               "target": "Package",
               "version": "[10.2.1, )"
             },
+            "AspNetCore.HealthChecks.NpgSql": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.2.12, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -77,6 +89,30 @@
             "Microsoft.Extensions.Caching.Hybrid": {
               "target": "Package",
               "version": "[10.8.0, )"
+            },
+            "Microsoft.Extensions.Http.Resilience": {
+              "target": "Package",
+              "version": "[10.8.0, )"
+            },
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "OpenTelemetry.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "OpenTelemetry.Instrumentation.AspNetCore": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "OpenTelemetry.Instrumentation.Http": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "Polly.Extensions": {
+              "target": "Package",
+              "version": "[8.7.0, )"
             },
             "Scalar.AspNetCore": {
               "target": "Package",
@@ -1208,14 +1244,14 @@
         }
       }
     },
-    "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj": {
+    "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj",
         "projectName": "TmsApi.Infrastructure",
-        "projectPath": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\TmsApi.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1271,9 +1307,21 @@
               "target": "Package",
               "version": "[10.0.10, )"
             },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[10.0.11, )"
+            },
+            "Microsoft.Extensions.Http.Resilience": {
+              "target": "Package",
+              "version": "[10.8.0, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[10.0.3, )"
+            },
+            "Polly.Extensions": {
+              "target": "Package",
+              "version": "[8.7.0, )"
             }
           },
           "imports": [

@@ -461,11 +461,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Application\\TmsApi.Application.csproj",
+      "projectUniqueName": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Application\\TmsApi.Application.csproj",
       "projectName": "TmsApi.Application",
-      "projectPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Application\\TmsApi.Application.csproj",
+      "projectPath": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Application\\TmsApi.Application.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Application\\obj\\",
+      "outputPath": "c:\\Users\\Admin\\QiyasPractice\\TmsApi\\TmsApi.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"

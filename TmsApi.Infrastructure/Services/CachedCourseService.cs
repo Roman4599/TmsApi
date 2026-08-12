@@ -54,6 +54,12 @@ public class CachedCourseService : ICachedCourseService
             cancellationToken: ct
         );
 
+        // Record cache hit/miss metric
+        if (dbHit)
+            TmsMeters.CacheMisses.Add(1, new KeyValuePair<string, object?>("key.kind", "course"));
+        else
+            TmsMeters.CacheHits.Add(1, new KeyValuePair<string, object?>("key.kind", "course"));
+
         if (!dbHit)
             _logger.LogInformation("Cache HIT for {Key}", key);
 
@@ -88,6 +94,12 @@ public class CachedCourseService : ICachedCourseService
             tags: [CacheKeys.CoursesTag],
             cancellationToken: ct
         );
+
+        // Record cache hit/miss metric
+        if (dbHit)
+            TmsMeters.CacheMisses.Add(1, new KeyValuePair<string, object?>("key.kind", "course"));
+        else
+            TmsMeters.CacheHits.Add(1, new KeyValuePair<string, object?>("key.kind", "course"));
 
         if (!dbHit)
             _logger.LogInformation("Cache HIT for {Key}", key);
